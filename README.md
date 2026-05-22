@@ -102,6 +102,36 @@ La skill hace onboarding estructurado, busca competidores automáticamente y ent
 
 ---
 
+## 📨 Paginated Delivery / Entrega Paginada
+
+🇪🇸 **Los reportes NUNCA se envían en un solo mensaje.** Se dividen en 3-5 partes numeradas. Cada parte termina pidiendo confirmación para continuar. Esto evita que las plataformas de mensajería trunquen el contenido.
+
+🇬🇧 **Reports are NEVER dumped in one message.** Split into 3-5 numbered parts. Each part ends asking for confirmation before continuing. Prevents truncation on messaging platforms.
+
+| Mode | Parts |
+|:---|:---:|
+| 🔍 M1 — Forensic Digital | 3 |
+| 📊 M2 — Commercial Forensic | 3 |
+| 🎨 M3 — Creative Architect | 3 |
+| 🧬 M4 — Full Fusion | 5 |
+
+**Flow / Flujo:**
+```
+📄 Parte 1/5 — Competidores + Gap Analysis
+[contenido...]
+---
+¿Continúo con la Parte 2? ("sí" / "stop")
+
+[usuario: "sí"]
+
+📄 Parte 2/5 — Fugas + Diagnóstico
+[contenido...]
+```
+
+**Stop words / Palabras para parar:** "stop", "basta", "para", "no", "pause"
+
+---
+
 ## 🔄 The Fusion Cycle / El Ciclo de Fusión
 
 ```
