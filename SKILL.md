@@ -288,9 +288,70 @@ Warn: *"Fast-track mode — reduced accuracy. Result in 1 cycle instead of 3."*
 
 ---
 
-## 📏 Anti-Truncation Rule
+## 📨 Paginated Delivery (CRITICAL — Anti-Truncation)
 
-When using `web_fetch`, set `maxChars` high enough (30000+) to avoid truncated competitor or audit data. When using `exec`, pipe long output through `tail -n 200` or split into chunks. When using `read`, use `offset` and `limit` for large files instead of reading whole files at once. Never deliver a finding based on truncated data — re-fetch with higher limits.
+**Never dump the entire report in one message.** Long outputs get truncated by messaging platforms. Always split into parts and require user confirmation between them.
+
+### Rules
+1. **Max ~15-20 lines per part** — if a section is longer, subdivide it further
+2. **Each part must be self-contained** — the user should understand it without seeing the others
+3. **Label every part clearly**: `📄 Parte 1/4`, `📄 Parte 2/4`, etc. (in user's language)
+4. **End every part with a confirmation prompt** asking if they want the next part
+5. **Wait for explicit confirmation** before sending the next part — never auto-send
+6. **Accepted confirmations**: "sí", "continúa", "siguiente", "dale", "next", "ok", "yes", "go", "→"
+7. **Stop words**: "para", "stop", "basta", "no", "pause" → stop the sequence immediately
+8. **If user asks to skip** → jump to the part they want
+
+### Part Structure by Mode
+
+**Mode 1 (Forensic Digital):**
+- P1: Header + Competitors detected + Gap Analysis table
+- P2: Diagnostic findings + Quick Wins
+- P3: Strategy + Moonshot + Kill criteria
+
+**Mode 2 (Forensic Comercial):**
+- P1: Header + CAC/LTV + ROAS table
+- P2: Money leaks + Solutions
+- P3: Strategy + Moonshot + Kill criteria
+
+**Mode 3 (Creative Architect):**
+- P1: Header + Campaign name + Hook + Archetype + Triggers
+- P2: Channel synergy + A/B variants + Safety check
+- P3: Execution timeline + Kill criteria
+
+**Mode 4 (Full Fusion):**
+- P1: Header + Competitors detected + Gap Analysis
+- P2: Money leaks + Diagnosis (data → creativity translation)
+- P3: Creative campaign + Hook + Archetype + Channel synergy + A/B variants
+- P4: Action plan (Quick Wins + Strategy + Moonshot)
+- P5: KPIs + Kill criteria + Executive summary
+
+### Confirmation Prompt Template
+End each part with (in user's language):
+```
+---
+📄 Parte X/N. ¿Continúo con la Parte X+1? ("sí" / "stop")
+```
+
+### Example Flow
+```
+🧬 MODE 4 — Full Fusion: [Project Name]
+
+📄 Parte 1/5 — Competidores y Gap Analysis
+
+[content...]
+
+---
+📄 Parte 1/5. ¿Continúo con la Parte 2? ("sí" / "stop")
+
+---[user says "sí"]---
+
+📄 Parte 2/5 — Fugas de Dinero y Diagnóstico
+
+[content...]
+```
+
+## 📏 Anti-Truncation Rule (Data)
 
 ## 🧰 Tools
 
