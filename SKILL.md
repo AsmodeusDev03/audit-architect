@@ -288,6 +288,10 @@ Warn: *"Fast-track mode — reduced accuracy. Result in 1 cycle instead of 3."*
 
 ---
 
+## 📏 Anti-Truncation Rule
+
+When using `web_fetch`, set `maxChars` high enough (30000+) to avoid truncated competitor or audit data. When using `exec`, pipe long output through `tail -n 200` or split into chunks. When using `read`, use `offset` and `limit` for large files instead of reading whole files at once. Never deliver a finding based on truncated data — re-fetch with higher limits.
+
 ## 🧰 Tools
 
 | Tool | Use |
