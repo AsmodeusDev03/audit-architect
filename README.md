@@ -67,25 +67,38 @@ git clone https://github.com/AsmodeusDev03/audit-architect.git \
 
 ---
 
+## 🌐 Multilingual / Multilingüe
+
+🇪🇸 La skill detecta automáticamente el idioma del usuario desde su primer mensaje. Funciona en **todos los idiomas** — español, inglés, portugués, francés, alemán, italiano, japonés, chino, árabe, ruso, hindi... cualquier idioma. Las preguntas de onboarding, hallazgos, recomendaciones, copys creativos y CTAs se generan en el idioma del usuario. Nunca mezcla idiomas.
+
+🇬🇧 The skill auto-detects the user's language from their first message. Works in **every language** — English, Spanish, Portuguese, French, German, Italian, Japanese, Chinese, Arabic, Russian, Hindi... any language. Onboarding questions, findings, recommendations, creative copy, and CTAs are all generated in the user's language. Never mixes languages.
+
+🇵🇹 Funciona em português. 🇫🇷 Fonctionne en français. 🇩🇪 Funktioniert auf Deutsch. 🇯🇵 日本語で動作. 🇨🇳 支持中文. 🇸🇦 تعمل بالعربية. 🇷🇺 Работает на русском.
+
+---
+
 ## 🧰 Usage / Uso
 
-In any OpenClaw chat, just say / En cualquier chat de OpenClaw, solo di:
+In any OpenClaw chat, just say in your language / Simplemente habla en tu idioma:
 
 ```
 🇪🇸 "Audita mi sitio web [URL]"
-🇪🇸 "Mis ventas cayeron, ¿qué hago?"
-🇪🇸 "Quiero lanzar una campaña desde cero"
-🇪🇸 "No sé por dónde empezar"
-
 🇬🇧 "Audit my website [URL]"
-🇬🇧 "My sales dropped, what do I do?"
-🇬🇧 "I want to launch a campaign from scratch"
-🇬🇧 "I don't know where to start"
+🇵🇹 "Audite meu site [URL]"
+🇫🇷 "Audite mon site web [URL]"
+🇩🇪 "Prüfe meine Website [URL]"
+
+"Mis ventas cayeron, ¿qué hago?"
+"My sales dropped, what do I do?"
+"Quiero lanzar una campaña desde cero"
+"I want to launch a campaign from scratch"
+"No sé por dónde empezar"
+"I don't know where to start"
 ```
 
-The skill does structured onboarding, automatic competitor research, and delivers a full action plan: quick wins + strategy + moonshot + pivot conditions.
+The skill does structured onboarding, automatic competitor research, and delivers a full action plan: quick wins + strategy + moonshot + pivot conditions — all in your language.
 
-La skill hace onboarding estructurado, busca competidores automáticamente y entrega un plan completo: quick wins + estrategia + moonshot + condiciones de pivote.
+La skill hace onboarding estructurado, busca competidores automáticamente y entrega un plan completo: quick wins + estrategia + moonshot + condiciones de pivote — todo en tu idioma.
 
 ---
 
